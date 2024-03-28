@@ -1,0 +1,38 @@
+name: gnn
+
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+
+dependencies:
+  - python=3.12
+
+  # Data Science/ML
+  - numpy=1.26.4
+  - pandas=2.2.0
+  - pytorch
+  - torchvision
+  - pytorch-lightning>=1.4
+  - networkx
+
+  # Visualization
+  - matplotlib=3.8.3
+  - seaborn=0.13.2
+
+  # Testing and formatting
+  - pytest=8.0.1
+  - black=24.2.0
+  - flake8=7.0.0
+  - isort=5.13.2
+  - pylint=3.0.3
+  - pep8-naming=0.13.3
+
+  # Misc
+  - jupyter=1.0.0
+  - ipykernel=6.29.2
+  - tqdm=4.66.2
+  - pip
+
+  - pip:
+    - torch_geometric
